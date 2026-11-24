@@ -1,0 +1,138 @@
+{
+  "verified_on": "2026-11-24",
+  "arm": {
+    "execution": "Keystone 0.9.2 assembly and Unicorn 2.1.4 ARM instruction emulation",
+    "cache_geometry": {
+      "sets": 4,
+      "ways": 2,
+      "entries": 8
+    },
+    "valid_traces": 111,
+    "policy_runs": 666,
+    "invalid_input_checks": 5,
+    "reference_checks": [
+      "hit/miss counters",
+      "final cache contents",
+      "allowed memory write regions",
+      "program completion",
+      "balanced stack"
+    ],
+    "default_trace": [
+      12,
+      10,
+      12,
+      10,
+      14,
+      10,
+      10,
+      10,
+      6,
+      10,
+      8,
+      6,
+      10,
+      14,
+      14,
+      12
+    ],
+    "random_seed": 12345,
+    "default_results": {
+      "FIFO": {
+        "hits": 9,
+        "misses": 7,
+        "cache": [
+          12,
+          8,
+          255,
+          255,
+          14,
+          10,
+          255,
+          255
+        ]
+      },
+      "LRU": {
+        "hits": 10,
+        "misses": 6,
+        "cache": [
+          12,
+          8,
+          255,
+          255,
+          10,
+          14,
+          255,
+          255
+        ]
+      },
+      "MRU": {
+        "hits": 8,
+        "misses": 8,
+        "cache": [
+          12,
+          8,
+          255,
+          255,
+          10,
+          14,
+          255,
+          255
+        ]
+      },
+      "LFU": {
+        "hits": 10,
+        "misses": 6,
+        "cache": [
+          12,
+          8,
+          255,
+          255,
+          10,
+          14,
+          255,
+          255
+        ]
+      },
+      "MFU": {
+        "hits": 8,
+        "misses": 8,
+        "cache": [
+          12,
+          8,
+          255,
+          255,
+          10,
+          14,
+          255,
+          255
+        ]
+      },
+      "Random": {
+        "hits": 10,
+        "misses": 6,
+        "cache": [
+          12,
+          8,
+          255,
+          255,
+          14,
+          6,
+          255,
+          255
+        ]
+      }
+    }
+  },
+  "riscv": {
+    "execution": "RARS 1.6, RV32IM",
+    "verified_matrix_cases": 5,
+    "inline_c_executed": false
+  },
+  "original_submission_sha256": {
+    "riscv-matrix-multiply/original/mac.s": "44f3b4c11c5ce7874b8415ab10bddf14ac872034f8b037279e463d3d2e686fa2",
+    "riscv-matrix-multiply/original/mac_inline.c": "bb52d3e6cc361d2d16fcccbbb1e157ec90f93ff9865bcb4d568f32ad851bf306",
+    "riscv-matrix-multiply/original/P1_Report.pdf": "8230f09d9c8e0908317e9a06091636fb4105f95874a891a0f5507c5bee588d3a",
+    "arm-cache-simulator/original/P2_40131025.s": "d5cb22273e53fb471c3d00132adb04d940aba4939ae45f683be5e934e942aac8",
+    "arm-cache-simulator/original/P2_Report.pdf": "7677d0c9122f7422a8b9259023d712e71df0196c46eb33c27e0e9cd7e441bc59"
+  }
+}
